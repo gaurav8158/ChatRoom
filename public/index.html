@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat_room</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  </head>
+<body>
+    <div class="username-popup" id="username-popup">
+        <h2>Login-Your-Account</h2>
+        
+        <form id="username-form">
+            <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter-Username" required/>
+          <button type="submit" id="join-btn">Join</button>
+        </form>
+      </div>
+      
+      <div class="chat-container"> 
+        
+        <div class="headbg" >
+          <image class="user" src="./user.webp"></image>
+          <h3 class="chat-head"> ChatRoom</h3>
+        </div>
+        
+        <div id="messages-container">
+        
+        </div>
+        <form id="chat-form">
+          <input type="text" id="message-input" placeholder="Type a message" />
+          <button id="send-btn" type="submit">Send<span class="material-icons">send</span></button>
+          <button id="exit-btn">logout<span class="material-icons">logout</span></button> 
+        </form>
+      </div>
+      <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js" async defer></script>
+</body>
+</html>

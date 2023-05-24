@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+#username{
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 85%;
+}
+  .username-popup{
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  z-index: 10;
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  }
+  #username-form{
+display: flex;
+flex-direction: column;
+gap:10px;
+  }
+  #join-btn{
+    background-color: green;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius: 20px;;
+  }
+
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    height: 90vh;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display:none;
+    z-index: 10;
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    border-radius: 10px;
+  }
+  #messages-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    background-image: url('bg.jpg');
+  }
+ .sent {
+    align-self: flex-end;
+    margin-bottom:2px;
+    background-color: #007bff;
+    color: #fff;
+    padding:0.5rem;
+    border-radius: 0.2rem;
+  }
+  
+ .received {
+    align-self: flex-start;
+    background-color: #aeaeaca8;
+    padding:0.5rem;
+    border-radius: 0.2rem;
+  }
+  
+
+  #chat-form {
+    display: flex;
+  }
+  
+  #chat-form input[type="text"] {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #chat-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #chat-form button:hover {
+    background-color: #0056b3;
+  }
+
+  .headbg{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+   align-items: center;
+   background-color:white;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   border:0.1px solid grey;
+  }
+  #exit-btn{
+    background-color:grey !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #send-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user{
+   height:30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
